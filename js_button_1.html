@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Exercise</title>
+    <link rel="icon" type="image/png" href="images/mdProfilPic_16x16.png" sizes="16x16" />
+  </head>
+  <body>
+    <p>// This is some really rudimentary JavaScript but it's mine.:D You click the first button and a function is executed.
+
+    <p id="greeting">Hello World!</p>
+    <input type="button" value="Click" onclick="runFunc()">click to change the greeting to "Hello Frankfurt!"</input>
+<!--click the button "Click" and the function runFunc() is executed - the greeting changes -->
+      <script>
+        function runFunc() {
+          document.getElementById("greeting").innerHTML = "Hello Frankfurt!";
+        }
+      </script>
+    <p></p>
+      <input type="button" value="Click" onclick="runFunc2()"> click to change the greeting to "Hello World!"</input>
+  <!--click the button "Click" and the function runFunc() is executed - the greeting changes -->
+        <script>
+          function runFunc2() {
+            document.getElementById("greeting").innerHTML = "Hello World!";
+          }
+        </script>
+    <hr>
+
+    <p>// Now I would like to implement a text field and a button. The user's entry is the value that is passed
+      to a function which then executes.</p>
+      This is a list of ingredient for a receipe for one person. To calculate the amount of ingredients according to the number of portions, enter the number, and submit the entry.<br>
+      Ingredients:<br>
+      eggs: 1 * multi,<br>
+      milk : 75 * multi,<br>
+      butter : 20 * multi,<br>
+      flour : 100 * multi,<br>
+      sugar : 50 * multi,<br>
+      <p></p>
+      <input type="text" id="entry" value="multi"> Please enter a number.<br>
+      <input type="button" id="subm" onclick="funcGetMulti()" value="Click here to send the entered number!"> (Send text field entry to JS)</input>
+
+        <p id="dataOfEntry">Here will appear the entered number.</p>
+        <script>
+
+          var x = document.getElementById("entry");
+          function funcGetMulti() {
+            alert(document.getElementById("entry"));
+          }
+
+        var multi = userEntry;
+        var crepes = {
+        eggs: 1 * multi,
+        milk : 75 * multi,
+        butter : 20 * multi,
+        flour : 100 * multi,
+        sugar : 50 * multi,
+        calAmount : function(multi) {
+          return this.eggs + " eggs" + "<br>" + this.milk + " ml milk" + "<br>" + this.butter + " g butter" + "<br>" + this.flour + " g flour" + "<br>"  +  this.butter + " g butter";
+        }
+      };
+
+      //Display data from the object:
+      document.getElementById("dataOfEntry").innerHTML = crepes.calAmount(multi);
+
+      </script>
+
+
+
+      </script>
+  </body>
+</html>
