@@ -1,0 +1,447 @@
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+body {
+  background-color: #b2b2b2;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#logo {
+  max-width: 300px;
+}
+
+a {
+  text-decoration-color: grey;
+}
+
+a:visited {
+  /* visited link */
+  color: #000;
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:active {
+  /* selected link*/
+  color: #000;
+}
+
+.button-style {
+  border: 2px;
+  font-family: inherit; /* takes the font from the outer container */
+  background-color: #b2b2b2;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 6px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-property: opacity;
+  transition: 0.4s opacity;
+  /*transition-duration: 0.2s;
+  transition-property: font-size;*/
+  }
+
+button {
+  border: none;
+  background: none;
+}
+
+#cvBtn:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+/*input {
+  background-color: white;
+  color: black;
+}
+
+#btn1 {
+  color: white;
+  text-decoration: none;
+}*/
+
+button:hover, button:focus, input:hover, input:focus {
+  cursor: pointer;
+  opacity: 0.8;
+  /*font-size: 24px;*/
+}
+
+.button_secondary {
+  background-color: none;
+  color: #000;
+}
+
+.profile_portrait {
+  float:left;
+  width: 200px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+footer {
+  /*clear: both;  this aligns on index.html 'find me on' + icons*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/**footer class**/
+/* this aligns the footer - justify-content does NOT work
+.footer_portrait {
+  clear: both;
+  text-align: center;
+}
+-->
+
+/* the following does NOT center the footer */
+/*footer {
+  clear: both;
+  justify-content: center
+}*/
+
+/* the following does NOT center the footer */
+/*.footer_portrait {
+  clear: both;
+  justify-content: center;
+  ;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*flex-direction: row;
+  width: 100%;
+  padding: 20px;*/
+}
+
+.page-header__item {
+  /*flex: 1 1 200px;*/
+}
+
+/*.page-header:last-child {
+  flex-grow: 1;
+  text-align: right;
+}*/
+
+/* centers upper Body/Content section of About Page - does not work*/
+.upperBody {
+  text-align: center;
+}
+
+.navigation-list {
+  list-style-type: none;
+  }
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+  }
+
+.navigation-list a:hover {
+  transform: scale(1.1);
+  opacity: 0.2;
+  transition-duration: 0.2s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: auto;
+}
+
+.grid__item {
+  background-color: #fff;
+  border-bottom: 2px;
+}
+
+.grid__item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/**following section contains svg animation rules for Skyline Frankfurt**/
+@keyframes fade {
+  0% {
+    fill: #b2b2b2;
+  }
+  50% {
+    fill: #666;
+  }
+  100% {
+    fill: #000;
+  }
+}
+
+#Vector_Graphics {
+  animation-duration: 10s;
+  animation-name: fade;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: scale(1);
+  }
+  11% {
+    transform: scale(1.01);
+  }
+  22% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#hometown {
+  animation-duration: 10s;
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+#hometown {
+  animation-duration: 2s;
+  animation-name: wiggle;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+/**following section contains svg animation rules for Skyline Frankfurt**/
+@keyframes m {
+  0% {
+    opacity: 0;
+  }
+  7% {
+    opacity: 0;
+  }
+  23% {
+    opacity: 1;
+  }
+}
+@keyframes i {
+  0% {
+    opacity: 0;
+  }
+50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+@keyframes k {
+  0% {
+    opacity: 0;
+  }
+20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+@keyframes e {
+  0% {
+    opacity: 0;
+  }
+35% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+}
+@keyframes d {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+}
+@keyframes i_1 {
+  0% {
+    opacity: 0;
+  }
+50% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+@keyframes e_1 {
+  0% {
+    opacity: 0;
+  }
+25% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+@keyframes t {
+  0% {
+    opacity: 0;
+  }
+30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+@keyframes z {
+  0% {
+    opacity: 0;
+  }
+15% {
+    opacity: 0;
+  }
+  27% {
+    opacity: 1;
+  }
+}
+
+
+#m {
+  animation: 9s m 1 normal linear;
+}
+#i {
+  animation: 9s i 1 normal linear;
+}
+#k {
+  animation: 9s k 1 normal linear;
+}
+#e {
+  animation: 9s e 1 normal linear;
+}
+#d {
+  animation: 9s d 1 normal linear;
+}
+#i_1 {
+  animation: 9s i_1 1 normal linear;
+}
+#e_1 {
+  animation: 9s e_1 1 normal linear;
+}
+#t {
+  animation: 9s t 1 normal linear;
+}
+#z {
+  animation: 9s z 1 normal linear;
+}
+
+/*@media and viewport rules always at the end of the css file */
+@media all and (max-width: 500 px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }*
+  h1 {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 800 px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+
+/* Grid fallback
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+*/
+
+/* colors:
+pink : #ffa0e4 (like 'logo Developer')
+brown: #854A22
+#5b4a46
+light-blue: #e6e6fa
+light-grey: #e9dccd
+*/
+
+/* fonts:
+<link href="https://fonts.googleapis.com/css?family=
+Comfortaa
+|Fredericka+the+Great
+|Lato
+|Monoton
+|Montserrat
+|Orbitron
+|Quicksand" rel="stylesheet">
+*/
