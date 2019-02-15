@@ -8,52 +8,45 @@
     <link rel="icon" type="image/png" href="img/flavicon_md_2.png" sizes="16x16" />
     -->
     <link rel="icon" type="image/png" href="img/flavicon_md_2.png" sizes="16x16" />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredericka+the+Great|Lato|Monoton|Montserrat|Orbitron|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
   </head>
   <body>
-    <header class="page-header">
-      <!--add your logo here -->
-      <!-- alternate logos:
-      <img class="page-header__item" src="img/MikeDietz_logo_century_blue.png" alt="logo">
-      <img src="img/MikeDietz_logo_orator_bl.png" alt="logo">-->
-      <img src="img/MikeDietz_logo_bodo_green.png" alt="logo">
-      <img class="page-header__item" id="logo" src="img/logo_webDev_b1.png">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li>
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
-          </li>
-          <li>
-            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-          </li>
-          <li>
-            <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-          </li>
-          <li>
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
+    <header class="header">
+      <div>
+        <!--add your logo here
+        <img class="page-header__item" src="img/MikeDietz_logo_century_blue.png" alt="logo">
+        <img src="img/MikeDietz_logo_bodo_green.png" alt="logo">
+        <img src="img/MikeDietz_logo_orator_bl.png" alt="logo">-->
+        <!--<img class="logo-svg" src="img/logoMD.svg" alt="logo">-->
+        <img id="MD-logo-abstract" src="img/MD_logo_abstract.png" alt="logo">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
+    <div class="container"></div>
     <section>
-      <h1>Work</h1>
+      <h1 id="work">Work</h1>
       <div class="grid">
         <div class="grid__item">
           <h2>Access Database</h2>
           <p>
-            Access Database for American Cancer Society - patient data from clinical study sites were electronically sent to
+            Access Database for American Cancer Society - patient data from clinical study sites were electronically transferred to
             database - spring 2002
           </p>
-          <a href="#">Link to Screenshot of Forms?</a>
         </div>
         <div class="grid__item">
           <h2>Maintenance Website</h2>
           <p>
-            Maintentance of company web siteText (TEAM Electronic GmbH), originally build with Frontpage
+            Maintentance of company web site (TEAM Electronic GmbH), originally build with Frontpage.
           </p>
-          <a href="#">Link to old Screenshot of Page?</a>
         </div>
         <div class="grid__item">
           <h2>Setup Website</h2>
@@ -70,30 +63,15 @@
           </p>
           <a href="http://www.team-electronic.de/fileadmin/user_upload/pdf/cats_pis/cat_2018_web.pdf">Gesamtkatalog 2018</a>
         </div>
-        <div class="grid__item">
-          <h2>Project 5</h2>
-          <p>
-            Text Project 5 - Text Project 1 - Text Project 1 - Text Project 1 - Text Project 1 - Text Project 1 -
-          </p>
-          <a href="#">Link to Project 5</a>
-        </div>
-        <div class="grid__item">
-          <h2>Project 6</h2>
-          <p>
-            Text Project 345 - Text Project 1 - Text Project 1 - Text Project 1 - Text Project 1 - Text Project 1 -
-          </p>
-          <a href="#">Link to Project 6</a>
-        </div>
       </div>
     </section>
     <footer class="footer_portrait">
       <div>
-      <p>Find me on</p>
-      <!--add your multimedia icons here -->
-      <img src="img/GitHub_icon.png" width="30px" alt="Github">
-      <img src="img/twitter-logo.jpg" width="30px" alt="Twitter">
-      <img src="img/flogo_b.png" width="30px" alt="LinkedIn">
-    </div>
+        <p>Find me on
+        </p>
+        <a href="https://codepen.io/mikeDietz"><img class="media-logos" src="img/codepen_btn_rnd_fill-blck.png" alt="CodePen"></a>
+        <a href="https://www.linkedin.com/in/mike-dietz-595596177"><img class="media-logos" src="img/ln_black.png" alt="LinkedIn"></a>
+      </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
   </body>

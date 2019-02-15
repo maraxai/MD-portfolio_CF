@@ -4,39 +4,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Mike Dietz</title>
-    <!-- alternative flavions:
     <link rel="icon" type="image/png" href="img/flavicon_md_2.png" sizes="16x16" />
-    -->
-    <link rel="icon" type="image/png" href="img/flavicon_md_2.png" sizes="16x16" />
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Fredericka+the+Great|Lato|Monoton|Montserrat|Orbitron|Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
   </head>
   <body>
-    <header class="page-header">
-      <!-- alternate logos:
-      <img class="page-header__item" src="img/MikeDietz_logo_century_blue.png" alt="logo">
-      <img src="img/MikeDietz_logo_orator_bl.png" alt="logo"> -->
-      <img src="img/MikeDietz_logo_bodo_green.png" alt="logo">
-      <img class="page-header__item" id="logo" src="img/logo_webDev_b1.png">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li>
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item">Home</a>
-          </li>
-          <li>
-            <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-          </li>
-          <li>
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-          </li>
-          <li>
-            <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-          </li>
+    <header class="header">
+      <div>
+        <img id="MD-logo-abstract" src="img/MD_logo_abstract.png" alt="logo">
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
-    <div>
+    <div class="container"></div>
+    <div class="upperBody">
       <h1>Contact</h1>
       <p>
         Mike Dietz<br>
@@ -63,7 +51,8 @@
         </tr>
       </table>
     </div>
-    <form action="" method="post" id="contact-form">
+    <form action="#" method="post" id="contact-form">
+      <p></p>
       <table>
         <tr>
           <th>Drop me a message:</th>
@@ -71,19 +60,16 @@
         </tr>
         <tr>
           <td><label class="standard-label" for="contact-email">E-Mail: </label></td>
-          <td><input type="email" id="contact-email" value="enter your email address" required></td>
+          <td><input type="email" id="contact-email"></td>
         </tr>
-      <br>
         <tr>
           <td><label class="standard-label" for="contact-phone">Phone: </label></td>
-          <td><input type="tel" id="contact-phone" pattern="[\d{4}D?\d{7}" value="#0000-0000000"></td>
+          <td><input type="tel" id="contact-phone"></td>
         </tr>
-      <br>
         <tr>
           <td><label class="standard-label" for="contact-msg">Message: </label></td>
-          <td><textarea maxlength="240" id="contact-msg" required></textarea></td>
+          <td><textarea maxlength="240" id="contact-msg"></textarea></td>
         </tr>
-        <br>
         <tr>
           <td></td>
           <td><input type="submit" value="send Message"></td>
@@ -91,13 +77,12 @@
     </form>
     <footer class="footer_portrait">
       <div>
-        <p>Find me on</p>
-        <!--add your multimedia icons here -->
-        <img src="img/GitHub_icon.png" width="30px" alt="Github">
-        <img src="img/twitter-logo.jpg" width="30px" alt="Twitter">
-        <img src="img/flogo_b.png" width="30px" alt="LinkedIn">
+        <p>Find me on
+        </p>
+        <a href="https://codepen.io/mikeDietz"><img class="media-logos" src="img/codepen_btn_rnd_fill-blck.png" alt="CodePen"></a>
+        <a href="https://www.linkedin.com/in/mike-dietz-595596177"><img class="media-logos" src="img/ln_black.png" alt="LinkedIn"></a>
       </div>
     </footer>
-    <script src="js/tota11y.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
