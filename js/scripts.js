@@ -8,12 +8,12 @@
     var value = $emailInput.value;
 
     if (!value) {
-      showErrorMessage($emailInput, 'Correo electrónico es un campo obligatorio.');
+      showErrorMessage($emailInput, 'Please enter an e-mail address.');
       return false;
     }
 
     if((value.indexOf('@') < 1) || (value.indexOf('.') < 3)) {
-      showErrorMessage($emailInput, 'Escriba una dirección de correo electrónico válida.');
+      showErrorMessage($emailInput, 'Please enter a valid e-mail address.');
       return false;
     }
 
@@ -64,7 +64,7 @@
 
 
   function showErrorMessage($input, message) {
-    var $container = document.querySelector('input'); // input fields
+    var $container = $input.parentElement; // input fields
     // remove an error
     var error = $container.querySelector('.error-message');
     if (error) {
