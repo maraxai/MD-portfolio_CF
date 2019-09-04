@@ -149,11 +149,14 @@ footer p {
 }
 
 .upperBody {
-margin-left: 20px;
+  clear: both;
+  text-align: center;
+  width: 100%;
 }
 
 .center-body {
   text-align: center;
+  margin: 30px
 }
 
 .menu a::before,
