@@ -10,6 +10,11 @@
   --font-family: 'Montserrat';
 }
 
+
+html {
+   overflow-y: scroll;
+}
+
 body {
   background-color: var(--primary-color);
   font-family: var(--font-family);
@@ -44,6 +49,7 @@ h3 {
 #MD-logo-abstract {
   padding-top: 15px;
   width: 17%;
+  margin-left: 10px
 }
 
 a {
@@ -87,6 +93,12 @@ button {
 #cvBtn:hover {
   transform: scale(1.1);
   transition-duration: 0.2s;
+}
+
+.btn-code-online {
+  color: #fff;
+  background-color: #123456
+
 }
 
 button:hover, button:focus, input:hover, input:focus {
@@ -199,11 +211,71 @@ footer p {
 }
 
 .grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
   background-color: var(--header-blue);
   border-bottom: 2px;
   padding: 10px;
   box-shadow: 0.2em 0.2em 0.8em var(--header-blue);
   border-radius: 6px;
+}
+
+#grad1 {
+  display: flex;
+
+  align-items: center;
+
+  background-image: radial-gradient(#567890, var(--header-blue));
+}
+
+#quizApp {
+  width: 80%;
+  align: 'center'
+}
+
+.btn-code-online {
+  color: #000;
+  background-color: #fff;
+  border-radius: 3px;
+	transition: all 0.3s;
+	position: relative;
+	line-height: 100px;
+	height: 100px;
+	text-align: center;
+	width: 20px;
+  padding: 5px;
+  margin: 10px;
+	cursor: pointer;
+}
+
+.btn-code-online span {
+	transition: all 0.3s;
+}
+.btn-code-online::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(123,120,120,120, 0.5);
+	border-bottom-color: rgba(123,120,120,120, 0.5);
+	transform: scale(0.1, 1);
+}
+
+.btn-code-online:hover::before {
+  color: green;
+	opacity: 0.5;
+	transform: scale(1, 1);
 }
 
 form#contact-form {
