@@ -3,13 +3,13 @@
   --secondary-color: #000;
   --black: #000000;
   --grey: #808080;
-  --header-blue: #eeeeee;
+  --header-blue: #9e99ec;
+  --gradient-color: #34348e;
   --light-grey: #edeae0;
   --slate-dark-grey: #2f4f4f;
   --font-weight-700: 700;
   --font-family: 'Montserrat';
 }
-
 
 html {
    overflow-y: scroll;
@@ -36,6 +36,10 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: var(--font-weight-700);
+}
+
+.project-title {
+  color: white;
 }
 
 .media-logos {
@@ -93,12 +97,6 @@ button {
 #cvBtn:hover {
   transform: scale(1.1);
   transition-duration: 0.2s;
-}
-
-.btn-code-online {
-  color: #fff;
-  background-color: #123456
-
 }
 
 button:hover, button:focus, input:hover, input:focus {
@@ -214,20 +212,20 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   background-color: var(--header-blue);
   border-bottom: 2px;
   padding: 10px;
   box-shadow: 0.2em 0.2em 0.8em var(--header-blue);
   border-radius: 6px;
+
+  background-image: linear-gradient(var(--header-blue), var(--gradient-color));
 }
 
-#grad1 {
+.grad1 {
   display: flex;
-
   align-items: center;
-
-  background-image: radial-gradient(#567890, var(--header-blue));
+  background-image: linear-gradient(var(--header-blue), var(--gradient-color));
 }
 
 #quizApp {
@@ -235,8 +233,42 @@ footer p {
   align: 'center'
 }
 
+.images {
+  position: relative;
+  }
+
+
+.imageOne {
+  width: 200px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+  transition: 0.7s ease;
+}
+
+.imageTwo {
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.images:hover .imageOne {
+  opacity: 0;
+  transition: .5s ease;
+}
+
+a.btn-code-online {
+  text-decoration: none;
+}
+
 .btn-code-online {
-  color: #000;
+  color: blue;
   background-color: #fff;
   border-radius: 3px;
 	transition: all 0.3s;
@@ -244,9 +276,10 @@ footer p {
 	line-height: 100px;
 	height: 100px;
 	text-align: center;
-	width: 20px;
+	width: 50px;
   padding: 5px;
   margin: 10px;
+  opacity: 0.6;
 	cursor: pointer;
 }
 
@@ -260,21 +293,20 @@ footer p {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 1;
 	opacity: 0;
 	transition: all 0.3s;
 	border-top-width: 1px;
 	border-bottom-width: 1px;
 	border-top-style: solid;
 	border-bottom-style: solid;
-	border-top-color: rgba(123,120,120,120, 0.5);
-	border-bottom-color: rgba(123,120,120,120, 0.5);
-	transform: scale(0.1, 1);
+	border-top-color: orange;
+	border-bottom-color: orange;
+	transform: scale(0, 1.3);
 }
 
 .btn-code-online:hover::before {
-  color: green;
-	opacity: 0.5;
+  color: orange;
+	opacity: 1;
 	transform: scale(1, 1);
 }
 
