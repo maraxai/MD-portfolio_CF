@@ -177,6 +177,11 @@ footer p {
   width: 80%
 }
 
+.logo-svg {
+  width: 340px;
+  text-align: center
+}
+
 .div-button {
   margin-bottom: 200px
 }
