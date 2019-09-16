@@ -522,7 +522,7 @@ Grid fallback
   .header .menu {
     clear: none;
     float: right;
-    max-height: 300;
+    max-height: none;
   }
   .header .menu-icon {
     display: none;
