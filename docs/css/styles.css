@@ -122,7 +122,7 @@ button:hover, button:focus, input:hover, input:focus {
 }
 
 footer {
-  /*clear: both;  this aligns on index.html 'find me on' + icons*/
+  clear : both;/*clear: both;  this aligns on index.html 'find me on' + icons*/
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -183,7 +183,7 @@ footer p {
 }
 
 .div-button {
-  margin-bottom: 200px
+  margin-bottom: 150px
 }
 
 .menu a::before,
